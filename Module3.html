@@ -6,6 +6,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+				
+		</script>
+
 	</head>
 	<body class="is-preload">
 
@@ -28,13 +39,38 @@
 									</header>
 
 									<div class="box">
-										<ul>
-											<li>highlighted takeaway 1</li>
-											<li>highlighted takeaway 2</li>
-											<li>highlighted takeaway 3</li>
+										<ul class="alt">
+											<li>Goal: learn how to understand context</li>
+											<li>Gage context by using ABC<br>
+											- Antecedent, behavior, and consequence</li>
+											<li>Practice ABC</li>
 										</ul>
 									</div>
+									
+									<h2>Context</h2>
+									<p>Context is everything when it comes to behavioral challenges in persons with dementia. There are always stimuli, people, events, etc. occurring before the behavior in question. The behavior never arises in a vacuum. Sometimes those stimuli, people, events, etc. occur regularly before the behavior emerges. Those things might increase the likelihood that challenging behavior will emerge.</p>
 
+									<h2>Context = Antecedent, Behavior, and Consequence</h2>
+									<p>Antecedent: When something in the environment increases the chances that a particular behavior emerges, we call this an antecedent.</p>
+									<p>Antecedents come before the behavior of interest and increase the likelihood of behavior.</p>
+									<p>A consequence (outcome) usually follows a behavior. Consequence could be either pleasant or unpleasant.</p>
+									
+									<h2>ABC Record Form</h2>
+									<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
+									
+									<h2>Exercise</h2>
+									<ul>
+										<li>Examples of situations given</li>
+
+										<li>Using ABC forms to practice figuring out the context</li>
+
+										<li>Examples of ABC transcript given to compare</li>
+									</ul>
+
+									
+									<a onclick="toggle_visibility('full');" class="button fit">Display Full Chapter Text</a>
+
+									<span id="full" style="display: none;">
 									<p>Once you have ruled out medical explanations for challenging behaviors, the next step is to examine the context in which the behavior occurs. Before we describe how to talk about context with staff, it is important to dig a little deeper and explore the conceptual underpinnings of what we mean by context from a behavioral perspective.</p>
 
 									<p>Context is everything when it comes to behavioral challenges in persons with dementia. There are always stimuli, people, events, etc. occurring before the behavior in question. The behavior never arises in a vacuum. Sometimes those stimuli, people, events, etc. occur regularly before the behavior emerges. Those things might increase the likelihood that challenging behavior will emerge. Drastically increasing the ambient temperature might increase the likelihood that a person will take off his or her sweater. Drastically lowering the ambient temperature might, in contrast, increase the likelihood that a person will put it on.</p>
@@ -60,6 +96,7 @@
 									<p>If you see the behavioral challenges occurring at only certain times of the day, you might then want to look at the patient’s schedule. Perhaps, the behavior emerges in the presence of a particular staff member. Perhaps, the behavior emerges during specific activities, which involve lots of noise, etc. Sundowning, for example, often occurs in the late afternoon – coinciding with changes in sunlight. It is believed that this change in natural light confuses, disorients patients. Moreover, when less light comes in from outside, windows become mirror-like. Accordingly, rather than looking out at trees, birds, squirrels, clouds moving in the sky, etc., they are seeing elderly people who they don’t recognize milling about. Perhaps, they may not even recognize their own reflection as they approach the glass. From their perspective, their reflection might look like a stranger looking right back at them, quizzically. As a side note, it would be very disconcerting looking out your living room window, only to see a stranger peering in – his or her eyes following yours. </p>
 
 									<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
+									</span>
 
 
 									<ul class="actions fit">
