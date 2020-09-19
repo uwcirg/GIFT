@@ -6,6 +6,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+				
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -28,19 +38,33 @@
 									</header>
 
 									<div class="box">
-										<ul>
-											<li>highlighted takeaway 1</li>
-											<li>highlighted takeaway 2</li>
-											<li>highlighted takeaway 3</li>
+										<ul class="alt">
+											<li>Learn how to recognize the “right” behavior in the “wrong” place</li>
 										</ul>
 									</div>
+									
+									<h2>“Wrong” 🡪 “Right”</h2>
+									<p>Problem behavior observed in persons with dementia is best characterized as the “right” behavior in the “wrong” place.</p>
+									<p>Persons with dementia perform the “right” behavior in the “wrong” place because they have difficulty figuring out what to do in many situations.</p>
 
-									<p>Problem behavior observed in persons with dementia is best characterized as the “right” behavior in the “wrong” place. For example, going for a walk is an excellent form of exercise that has beneficial physical and psychological effects. From a health perspective, walking is the “right” behavior for elderly persons with dementia. Supervised walks are considered the “right” behavior in the “right” place. By contrast, going for unsupervised walks (i.e., “wandering”), where the patient is likely to get lost or venture into unsafe environments is considered the “right” behavior in the “wrong” place. Wandering is simply walking, and like walking, also has potential physical and psychological benefits. However, unlike supervised walks, the potential for harm far outweighs the benefits. Patients with dementia often get confused and lost, and don’t always exercise prudent judgment when it comes to safety (e.g., wandering along the side of a busy road). </p>
+									<h2>Exercise</h2>
+									<p>Please figure out the right places for this behaviors
+										<ol>
+											<li>Wondering in the parking lot outside of SFN</li>
+											<li>Urinating in the trash can next to nurse station</li>
+											<li>Putting food tray under the bed</li>
+										</ol>
+									</p>
+									<a onclick="toggle_visibility('full');" class="button fit">Display Full Chapter Text</a>
 
-									<p>Other examples of the “right” behavior in the “wrong” place include touching other people’s belongings, public masturbation, and urinating around the residence. None of these behaviors are “wrong” in the sense that they should never occur. Touching other people’s belongings is appropriate with their permission (“right” behavior – “right” place). It only becomes a problem when a patient does so without the other person’s permission (“right” behavior – “wrong” place). Masturbation can have healthy effects when performed in privacy (“right” behavior – “right” place). It only becomes a problem when performed in public (“right” behavior – “wrong” place). Urinating in the toilet is a healthy behavior (“right” behavior – “right” place). It only becomes a problem when it occurs outside of this context, like in a planter or your pants (“right” behavior – “wrong” place).</p>
+									<span id="full" style="display: none;">
+										<p>Problem behavior observed in persons with dementia is best characterized as the “right” behavior in the “wrong” place. For example, going for a walk is an excellent form of exercise that has beneficial physical and psychological effects. From a health perspective, walking is the “right” behavior for elderly persons with dementia. Supervised walks are considered the “right” behavior in the “right” place. By contrast, going for unsupervised walks (i.e., “wandering”), where the patient is likely to get lost or venture into unsafe environments is considered the “right” behavior in the “wrong” place. Wandering is simply walking, and like walking, also has potential physical and psychological benefits. However, unlike supervised walks, the potential for harm far outweighs the benefits. Patients with dementia often get confused and lost, and don’t always exercise prudent judgment when it comes to safety (e.g., wandering along the side of a busy road). </p>
 
-									<p>Persons with dementia perform the “right” behavior in the “wrong” place because they have difficulty figuring out what to do in many situations. Specifically, patients have trouble interpreting and responding appropriately to signs in the environment. For example, staff and visitors may easily identify the symbol for the men’s or women’s restroom, but patients may not.  Consequently, when patients might not be able to locate the bathroom on account of their inability to interpret signs. The signs have simply lost their meaning. Not knowing where to turn they may urinate in what seems to be the most appropriate place at the time to him or her: A bowl of fruit, behind a dresser, or in a closet.</p>
+										<p>Other examples of the “right” behavior in the “wrong” place include touching other people’s belongings, public masturbation, and urinating around the residence. None of these behaviors are “wrong” in the sense that they should never occur. Touching other people’s belongings is appropriate with their permission (“right” behavior – “right” place). It only becomes a problem when a patient does so without the other person’s permission (“right” behavior – “wrong” place). Masturbation can have healthy effects when performed in privacy (“right” behavior – “right” place). It only becomes a problem when performed in public (“right” behavior – “wrong” place). Urinating in the toilet is a healthy behavior (“right” behavior – “right” place). It only becomes a problem when it occurs outside of this context, like in a planter or your pants (“right” behavior – “wrong” place).</p>
 
+										<p>Persons with dementia perform the “right” behavior in the “wrong” place because they have difficulty figuring out what to do in many situations. Specifically, patients have trouble interpreting and responding appropriately to signs in the environment. For example, staff and visitors may easily identify the symbol for the men’s or women’s restroom, but patients may not.  Consequently, when patients might not be able to locate the bathroom on account of their inability to interpret signs. The signs have simply lost their meaning. Not knowing where to turn they may urinate in what seems to be the most appropriate place at the time to him or her: A bowl of fruit, behind a dresser, or in a closet.</p>
+
+									</span>
 									<ul class="actions fit">
 										<li><a href="Module5.html" class="button fit">< 5: Extinction</a></li>
 										<li><a href="Module7.html" class="button primary fit">7: Need to Communicate ></a></li>
