@@ -75,7 +75,7 @@
 									</div>
 
 									<script type="text/javascript">
-									<!--
+									
 									    function toggle_visibility(id) {
 									       var e = document.getElementById(id);
 									       if(e.style.display == 'block')
@@ -83,7 +83,12 @@
 									       else
 									          e.style.display = 'block';
 									    }
-									//-->
+										
+									   function ShowHideDiv(e2q1a) {
+										var dvPassport = document.getElementById("e2q1C");
+										dvPassport.style.display = e2q1a.checked ? "block" : "none";
+									    }
+									
 									</script>
 
 									<hr class="major" />
@@ -100,14 +105,15 @@
 									<p>Mark excess or deficit after each behavior</p>
 									<h4>Asking not to eat lunch every hour for a morning </h4>
 									<div>
-										<input type="radio" id="e2-q1-a" name="e2-q1" value="true">
-										<label for="e2-q1-a">Excess</label>
+										<input type="radio" id="e2q1a" name="e2q1" value="true" onclick="ShowHideDiv(this)">
+										<label for="e2q1a">Excess</label>
 									</div>
 									<!--<div id="true" class="show-hide">Correct!</div>-->
 									<div>
 										<input type="radio" id="e2-q1-b" name="e2-q1" value="false">
 										<label for="e2-q1-b">Deficit</label>
 									</div>
+										<p id="e2q1C">Correct</p>
 
 									<h4>Refusing to eat three times a day</h4>
 									<div>
