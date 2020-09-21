@@ -84,9 +84,10 @@
 									          e.style.display = 'block';
 									    }
 										
-									   function ShowHideDiv(e2q1a) {
-										var dvPassport = document.getElementById("e2q1C");
-										dvPassport.style.display = e2q1a.checked ? "block" : "none";
+									   function ShowHideDiv(box, text) {
+										var chkYes = document.getElementById(box);
+										var dvtext = document.getElementById(text);
+										dvtext.style.display = chkYes.checked ? "block" : "none";
 									    }
 									
 									</script>
@@ -105,15 +106,15 @@
 									<p>Mark excess or deficit after each behavior</p>
 									<h4>1. Asking not to eat lunch every hour for a morning </h4>
 									<div>
-										<input type="radio" id="e2q1a" name="e2q1" value="true" onclick="ShowHideDiv(this)">
-										<label for="e2q1a">Excess</label>
+										<input type="radio" id="e2-q1-a" name="e2-q1" value="true" onclick="ShowHideDiv(e2-q1-a, e2q1C)">
+										<label for="e2-q1-a">Excess</label>
 									</div>
 									<!--<div id="true" class="show-hide">Correct!</div>-->
 									<div>
 										<input type="radio" id="e2-q1-b" name="e2-q1" value="false">
 										<label for="e2-q1-b">Deficit</label>
 									</div>
-										<p id="e2q1C">Correct</p>
+									<p id="e2q1C" style="display: none">Correct</p>
 
 									<h4>2. Refusing to eat three times a day</h4>
 									<div>
