@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>Module 1 - </title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/MCB.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -105,17 +106,11 @@
 									<h3>Exercise 2</h3>
 									<p>Mark excess or deficit after each behavior</p>
 									<h4>1. Asking not to eat lunch every hour for a morning </h4>
-									<div>
-										<input type="radio" id="e2-q1-a" name="e2-q1" value="true" onclick="ShowHideDiv(e2-q1-a, e2q1C)">
-										<label for="e2-q1-a">Excess</label>
-									</div>
-									<!--<div id="true" class="show-hide">Correct!</div>-->
-									<div>
-										<input type="radio" id="e2-q1-b" name="e2-q1" value="false" onclick="ShowHideDiv(e2-q1-b, e2q1D)>
-										<label for="e2-q1-b">Deficit</label>
-									</div>
-									<p id="e2q1C" style="display: none">Correct</p>
-									<p id="e2q1D" style="display: none">Incorrect</p>
+									<a onclick="toggle_visibility('e2q1a');" class="button fit">excess</a>
+									<a onclick="toggle_visibility('e2q1b');" class="button fit">deficit</a>
+										
+									<p id="e2q1a" style="display: none">Correct</p>
+									<p id="e2q1b" style="display: none">Incorrect</p>
 
 									<h4>2. Refusing to eat three times a day</h4>
 									<div>
