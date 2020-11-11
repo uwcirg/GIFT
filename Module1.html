@@ -121,21 +121,26 @@
 									<h3>Exercise 2</h3>
 									<p>Mark excess or deficit after each behavior</p>
 									<h4>1. Asking not to eat lunch every hour for a morning </h4>
-									<ul class="actions">
-										<li><a onclick="toggle_visibility('e2q1');" class="button">excess</a></li>
-										<li><a onclick="toggle_visibility('e2q1');" class="button">deficit</a></li>
-									</ul>
-										
-									<p id="e2q1" style="display: none">This is an excess behavior</p>
-									<p id="e2q1b" style="display: none">Incorrect</p>
+									<div>
+										<input type="radio" id="e2-q1-a" name="e2-q1">
+										<label for="e2-q1-a">Excess</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="e2-q1-b" name="e2-q1">
+										<label for="e2-q1-b">Deficit</label>
+									</div>
+									<p class="answer" style="display: none">This is an Excess Behavior</p>
 
 									<h4>2. Refusing to eat three times a day</h4>
-									<ul class="actions">
-										<li><a onclick="toggle_visibility('e2q2a');" class="button small">excess</a></li>
-										<li><a onclick="toggle_visibility('e2q2b');" class="button small">deficit</a></li>
-									</ul>
-									<p id="e2q2a" style="display: none">Correct</p>
-									<p id="e2q2b" style="display: none">Incorrect</p>
+									<div>
+										<input type="radio" id="e2-q2-a" name="e2-q2">
+										<label for="e2-q2-a">Excess</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="e2-q2-b" name="e2-q2">
+										<label for="e2-q2-b">Deficit</label>
+									</div>
+									<p class="answer" style="display: none">This is an Deficit Behavior</p>
 
 									<h4>3. Keep yelling out loud “help” while seating in the hall</h4>
 									<div>
@@ -168,6 +173,7 @@
 										<input type="radio" id="e2-q5-b" name="e2-q5">
 										<label for="e2-q5-b">Deficit</label>
 									</div>
+									<p class="answer" style="display: none">This is an Excess Behavior</p>
 
 									<h4>6. Pacing between room and nurse station 5 times in a hour</h4>
 									<div>
@@ -178,6 +184,7 @@
 										<input type="radio" id="e2-q6-b" name="e2-q6">
 										<label for="e2-q6-b">Deficit</label>
 									</div>
+									<p class="answer" style="display: none">This is an Excess Behavior</p>
 
 									<h4>7. Seating on the floor in a corner and barely moving</h4>
 									<div>
@@ -188,6 +195,7 @@
 										<input type="radio" id="e2-q7-b" name="e2-q7">
 										<label for="e2-q7-b">Deficit</label>
 									</div>
+									<p class="answer" style="display: none">This is an Deficit Behavior</p>
 										
 									<button onclick="toggle();"><p>Show Answers</p></button>
 
