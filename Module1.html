@@ -89,6 +89,17 @@
 										var dvtext = document.getElementById(text);
 										dvtext.style.display = chkYes.checked ? "block" : "none";
 									    }
+										
+									function toggle() {
+									  var x = document.getElementsByClassName("answer");
+									  for (var i =0; i < x.length; i++) {	
+									  if (x[i].style.display === "none") {
+									    x[i].style.display = "block";
+									  } else {
+									    x[i].style.display = "none";
+									  }
+									  }
+									}
 									
 									</script>
 
@@ -130,6 +141,7 @@
 										<input type="radio" id="e2-q3-b" name="e2-q3">
 										<label for="e2-q3-b">Deficit</label>
 									</div>
+									<p class="answer" style="display: none">This is an Excess Behavior</p>
 
 									<h4>4. Not saying anything when staff walk by and say hi to patient</h4>
 									<div>
@@ -140,6 +152,7 @@
 										<input type="radio" id="e2-q4-b" name="e2-q4">
 										<label for="e2-q4-b">Deficit</label>
 									</div>
+									<p class="answer" style="display: none">This is an Deficit Behavior</p>
 
 									<h4>5. Spit at staff every time someone</h4>
 									<div>
@@ -170,6 +183,8 @@
 										<input type="radio" id="e2-q7-b" name="e2-q7">
 										<label for="e2-q7-b">Deficit</label>
 									</div>
+										
+									<button onclick="toggle();"><p>Show Answers</p></button>
 
 									<p></p>
 									<hr class="major" />
