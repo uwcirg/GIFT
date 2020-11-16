@@ -5,6 +5,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>  
+			$(function(){ 
+				$("#header").load("headerfile.html");  
+			}); 
+		</script>  
 	</head>
 	<body class="is-preload">
 
@@ -50,7 +55,7 @@
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
-							<script>$("#htmlData").load("headerfile.html #Header");</script>
+							<div id="header"></div> 
 							<!-- Menu 
 								<nav id="menu">
 									<header class="major">
