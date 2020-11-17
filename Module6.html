@@ -14,9 +14,25 @@
 					e.style.display = 'none';
 				else
 					e.style.display = 'block';
+			}
+			
+			function toggle() {
+				var x = document.getElementsByClassName("answer");
+				for (var i =0; i < x.length; i++) {	
+					if (x[i].style.display === "none") {
+						x[i].style.display = "block";
+					} else {
+						x[i].style.display = "none";
+					}
 				}
+			}
 				
 		</script>
+		<style>
+			.answer { 
+				color: #f56a6a;
+			} 
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -50,12 +66,36 @@
 
 									<h2>Exercise</h2>
 									<p>Please figure out the right places for this behaviors
-										<ol>
-											<li>Wondering in the parking lot outside of SFN</li>
-											<li>Urinating in the trash can next to nurse station</li>
-											<li>Putting food tray under the bed</li>
-										</ol>
-									</p>
+									<p>1. Wondering in the parking lot outside of SFN</p>
+									<div>
+										<textarea name="message-1" id="message-1" placeholder="write the right place for this behavior (this form does not save any responses)" rows="2"></textarea>
+									</div>
+									<div class="box answer" style="display: none;">
+										<p>Waling in a park/hall with supervision to reduce risk of getting lost and physical injury.</p>
+									</div>
+									
+									
+									<p>Urinating in the trash can next to nurse station</p>
+									<div>
+										<textarea name="message-2" id="message-2" placeholder="write the right place for this behavior (this form does not save any responses)" rows="2"></textarea>
+									</div>
+									<div class="box answer" style="display: none;">
+										<p>Urinating in the toilet with scheduled and frequent reminders from staff.</p>
+									</div>
+									
+									
+									<p>Putting food tray under the bed</p>
+									<div>
+										<textarea name="message-3" id="message-3" placeholder="write the right place for this behavior (this form does not save any responses)" rows="2"></textarea>
+									</div>
+									<div class="box answer" style="display: none;">
+										<p>Food tray next to the bed, because under bed space is blocked.</p>
+									</div>
+									
+									<button onclick="toggle();"><p>Show Answers</p></button>
+
+									
+									
 									<p>Answers for the right places</p>
 									<ol>
 										<li>Waling in a park/hall with supervision to reduce risk of getting lost and physical injury</li>
@@ -65,6 +105,7 @@
 							
 									<a onclick="toggle_visibility('full');" class="button fit">Display Full Chapter Text</a>
 
+									<p></p>
 									<span id="full" style="display: none;">
 										<p>Problem behavior observed in persons with dementia is best characterized as the “right” behavior in the “wrong” place. For example, going for a walk is an excellent form of exercise that has beneficial physical and psychological effects. From a health perspective, walking is the “right” behavior for elderly persons with dementia. Supervised walks are considered the “right” behavior in the “right” place. By contrast, going for unsupervised walks (i.e., “wandering”), where the patient is likely to get lost or venture into unsafe environments is considered the “right” behavior in the “wrong” place. Wandering is simply walking, and like walking, also has potential physical and psychological benefits. However, unlike supervised walks, the potential for harm far outweighs the benefits. Patients with dementia often get confused and lost, and don’t always exercise prudent judgment when it comes to safety (e.g., wandering along the side of a busy road). </p>
 
