@@ -17,6 +17,12 @@
 				}
 				
 		</script>
+		<style>
+			.answer { 
+				color: #f56a6a;
+				display: none;
+			} 
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -41,27 +47,32 @@
 									<div class="box">
 										<ul class="alt">
 											<li>The best care for patients with progressive dementia (memory problems that worsen over time) focuses on the remaining abilities rather than on the ever-increasing disabilities.</li>
-											<li>Learning few strategies how to do this</li>
+											<li>Learning a few strategies how to do this</li>
 										</ul>
 									</div>
 
 									<h2>Verbal Prompts</h2>
 									<p>Verbal prompts are things we say or write that help patients perform a given task.</p>
-									<p>Example of verbal prompts for using microwave:</p>
-									<ol>
-										<li>open door</li>
-										<li>place coffee cup inside</li>
-										<li>press 1</li>
-										<li>press 2</li>
-										<li>press 3</li>
-										<li>press “start”</li>
-										<li>open door after bell rings</li>
-									</ol>
-									
+									<p>Please think of verbal prompts for using microwave.</p>
+									<a onclick="toggle_visibility('verb');" class="button small">Click here to show example</a> 
+									<div class="box answer" id="verb">
+										<ol>
+											<li>open door</li>
+											<li>place coffee cup inside</li>
+											<li>press 1</li>
+											<li>press 2</li>
+											<li>press 3</li>
+											<li>press “start”</li>
+											<li>open door after bell rings</li>
+										</ol>
+									</div>
 									<h2>Picture Prompts</h2>
 									<p>Picture prompts are photographs or illustrations that increase the chances that the behavior will be carried out effectively.</p>
-									<p>Example for “sock drawer”</p>
-									<span class="image fit"><img src="images/Module 10.png" alt="" /></span>
+									<p>Please think about how you would do picture prompts for a sock drawer</p>
+									<a onclick="toggle_visibility('pic');" class="button small">Click here to show example</a> 
+									<div class="box answer" id="pic">
+										<span class="image fit"><img src="images/Module 10.png" alt="" /></span>
+									</div>
 									
 									<h2>Modeling</h2>
 									<p>Modeling involves</p>
