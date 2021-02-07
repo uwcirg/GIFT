@@ -2,10 +2,27 @@
 
 <html>
 	<head>
-		<title>Module 2 - MCB</title>
+		<title>Module 7 - GIFT Care for Elderly</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+				
+		</script>
+		<style>
+			.answer { 
+				color: #f56a6a;
+				display: none;
+			} 
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -18,7 +35,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Managing Challanging Behaviors</strong> Washington Primary Care Research Network</a>
+									<a href="index.html" class="logo"><strong>GIFT Care for Elderly</strong> Washington Primary Care Research Network</a>
 								</header>
 
 							<!-- Content -->
@@ -28,13 +45,31 @@
 									</header>
 
 									<div class="box">
-										<ul>
-											<li>highlighted takeaway 1</li>
-											<li>highlighted takeaway 2</li>
-											<li>highlighted takeaway 3</li>
+										<ul class="alt">
+											<li>Understand loss of means to communicate</li>
+											
 										</ul>
 									</div>
-
+									<h2> Mental Exercise </h2>
+									<p>What would you do, if you are encapsulated in a sound proof glass bubble and having severe pain or discomfort? Your family is outside of this bubble and living their normal life.</p>
+									<p>Would you scream at your family for help <a onclick="toggle_visibility('e1');" class="button small">?</a> <span class="answer" id="e1"> screaming</span></p>
+									<p>Would you hit the bubble really hard or try to use something to hit it <a onclick="toggle_visibility('e2');" class="button small">?</a> <span class="answer" id="e2"> aggression</span></p>
+									<p>If all means fails, would you pace back and forth in the bubble and scratch your head while thinking of other means to get help <a onclick="toggle_visibility('e3');" class="button small">?</a> <span class="answer" id="e3"> wandering</span></p>
+									<!--<ul>
+										<li>Would you scream at your family for help? - screaming</li>
+										<li>Would you hit the bubble really hard or try to use something hit it? - aggression</li>
+										<li>If all means fails, would you pacing back and forth in the bubble and scratch your head while thinking of other means to get help? – wondering</li>
+									</ul>-->
+									<p><br>Out of all of the behaviors that occur in people with dementia, screaming, wandering, and aggression cause the most distress in caregivers.</p>
+									<h2>Loss of Means to Communicate</h2>
+									<p>During middle to later stages of dementia, some individuals have difficulties telling others that they are in pain due to a toothache, illness, or injury.</p>
+									<p>In severely impaired individuals, they may not even know why they’re in pain.</p>
+									<p>All so-called “bizarre” behavior observed in persons with dementia is adaptive. Patients simply do the best they can with what’s left of their skills.</p>
+									<p>What this means is patients, incapable of using (verbal) language, still communicate with us, nonverbally. Screaming, moaning, hitting, pacing, might be their way of telling us that something isn’t right.</p>
+			
+									<a onclick="toggle_visibility('full');" class="button fit">Show Full Module Text</a>
+									<span id="full" style="display: none;">
+									
 									<p>During middle to later stages of dementia, some individuals have difficulties telling others that they are in pain due to a toothache, illness, or injury. Perhaps they can’t find the words to describe how they feel or lack the initiative to ask for help. In severely impaired individuals, they may not even know why they’re in pain. They simply feel lousy and are in a bad mood. Feeling lousy and being in a bad mood make them more likely to aggress, as anyone would in that situation.</p>
 
 									<p>Because such individuals are incapable of telling us that they are in pain or otherwise in need of immediate attention, it is important not to restrict aggressive behavior. Aggressive behavior might be the only effective form of communication they have left that lets us know that they are suffering or something isn’t right for them. We say “effective” because aggressive behavior is guaranteed to grab our attention right away.  Of course, ideally, we are always better off anticipating problems by getting to know the individual. For example, by knowing their preferences, we might know certain activities are off limits. We might also become better at reading their emotional behavior before it escalates and gets out of hand.</p>
@@ -47,10 +82,14 @@
 
 									<p>Behaviors like urinating in planters, hording, and strange vocalizations are considered “bizarre” by onlookers. As it turns out, all so-called “bizarre” behavior observed in persons with dementia is adaptive. Patients simply do the best they can with what’s left of their skills, which diminish over time. Even screaming, while unpleasant to observers, is an adaptive behavior that should not be taken away. In the past, patients might have been able to tell professionals and family that they are in excruciating pain or are having an extreme reaction to a new medication. They simply say, “I’m in pain,” and we – as healthcare providers – try to locate the source of the pain and remedy their condition. If they say, “This medication is making me feel dizzy and nauseous,” we make adjustments to their medications, accordingly. How can patients who have lost their ability to communicate tell you that they’re in pain or otherwise require immediate attention? How do we as healthcare providers even know when there is a problem if they can’t tell us using words?</p>
 
+									</span>
+									<hr>
 									<ul class="actions fit">
 										<li><a href="Module6.html" class="button fit">< 6: Appropriateness</a></li>
 										<li><a href="Module8.html" class="button primary fit">8: Excess Disability ></a></li>
 									</ul>
+									
+									<p style="text-align: center;" class="copyright">Copyright &copy; 2020 Kyle Ferguson, Ph.D.</p>
 
 								</section>
 
@@ -67,7 +106,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html">Home</a></li>	
 										<li><a href="intro.html">Introduction</a></li>
 										<li><a href="Module1.html">1: Describing Behaviors</a></li>
 										<li><a href="Module2.html">2: R/O Medical Causes</a></li>
@@ -77,16 +116,16 @@
 										<li><a href="Module6.html">6: Appropriateness</a></li>
 										<li><a href="Module7.html">7: Need to Communicate</a></li>
 										<li><a href="Module8.html">8: Excess Disability</a></li>
-										<li><a href="Module9.html">9: title</a></li>
-										<li><a href="Module10.html">10: title</a></li>
-										<li><a href="Module11.html">11: title</a></li>									
+										<li><a href="Module9.html">9: Reducing Behavioral Excesses</a></li>
+										<li><a href="Module10.html">10: Reducing Behavioral Deficits</a></li>
+										<li><a href="Module11.html">11: Everything Else You Need to Know</a></li>									
 									</ul>
 								</nav>
 
-							<!-- Footer -->
+							<!-- Footer 
 								<footer id="footer">
 									<p class="copyright">&copy; WPRN 2020.</p>
-								</footer>
+								</footer>-->
 
 						</div>
 					</div>

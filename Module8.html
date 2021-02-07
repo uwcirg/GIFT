@@ -2,10 +2,27 @@
 
 <html>
 	<head>
-		<title>Module 8 - MCB</title>
+		<title>Module 8 - GIFT Care for Elderly</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+				
+		</script>
+		<style>
+			.answer { 
+				color: #f56a6a;
+				display: none;
+			} 
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -18,7 +35,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Managing Challanging Behaviors</strong> Washington Primary Care Research Network</a>
+									<a href="index.html" class="logo"><strong>GIFT Care for Elderly</strong> Washington Primary Care Research Network</a>
 								</header>
 
 							<!-- Content -->
@@ -28,13 +45,35 @@
 									</header>
 
 									<div class="box">
-										<ul>
-											<li>highlighted takeaway 1</li>
-											<li>highlighted takeaway 2</li>
-											<li>highlighted takeaway 3</li>
+										<ul class="alt">
+											<li>Understand how to learn a “new” language</li>
+											<li>Accept the last and only “voice”</li>
 										</ul>
 									</div>
+									<h2>Learn a “new” Language</h2>
+									<p>We must make attempts at learning their “language”, because we can’t expect patients to relearn “our” language.</p>
+									<p>Observe their behavior.</p>
+									<p>Allow and support all behavior in persons with dementia- the “good” and the “bad”.</p>
+									<p>Try to figure out when and why it occurs so that we can make more dangerous forms of communication (e.g., aggression) unnecessary.</p>
 
+									<h2>Exercise</h2>
+									<p>Please think about the following behaviors to figure out what they mean. Click on each = to see one of the possible meanings of these behaviors.</p>
+									<p>Grabbing their head <a onclick="toggle_visibility('e1');" class="button small">=</a> <span class="answer" id="e1">“I have a headache”</span></p>
+									<p>Refusing to bathe <a onclick="toggle_visibility('e2');" class="button small">=</a> <span class="answer" id="e2">“I have a fever and/or chills.” Or, “I was almost killed by drowning when younger.” Or, “I would like to be bathed by person X and not by person Y.”</span></p>
+									<p>Grimaces <a onclick="toggle_visibility('e3');" class="button small">=</a> <span class="answer" id="e3">“I’m in pain”</span></p>
+									<p>Smiling ear to ear <a onclick="toggle_visibility('e4');" class="button small">=</a> <span class="answer" id="e4">“I like what you’re doing”</span></p>
+									<p>A slumped over body posture <a onclick="toggle_visibility('e5');" class="button small">=</a> <span class="answer" id="e5">“My medication is making me feel groggy”</span></p>
+									<p>A “perky” body posture <a onclick="toggle_visibility('e6');" class="button small">=</a> <span class="answer" id="e6">“Things couldn’t be better”</span></p>
+									
+									
+									<h2>The last and only “voice”</h2>
+									<p>One day all will be lost to the disease.</p>
+									<p>Even though so-called “problem” behavior is disruptive, it might very well be the last and only “voice” the individual has left.</p>
+									<p>This “voice” is the last and only way to know whether a person is in pain or otherwise suffering.</p>
+									
+									
+									<a onclick="toggle_visibility('full');" class="button fit">Show Full Module Text</a>
+									<span id="full" style="display: none;">
 									<p>It is often said of caregivers of persons with dementia that they have to learn a “new” language. What this means is patients, incapable of using (verbal) language, still communicate with us, nonverbally. Screaming, moaning, hitting, pacing, might be their way of telling us that something isn’t right. This is their new language, their new adaptive form of communication.</p>
 
 									<p>Because we can’t expect patients to relearn “our” language, we must make attempts at learning their “language”. What this entails is observing their behavior. Do you see a sudden change in behavior? For example, more agitation might mean that they aren’t feeling well or are extremely frightened. Grabbing their head might communicate, “I have a headache”. Refusing to bathe might communicate, “I have a fever and have the chills,” or, “I would like to be bathed by person X and not by person Y”. Person Y looks like my ex–spouse who was abusive for many years.</p>
@@ -54,10 +93,14 @@
 									<p>It is important to allow all behavior in persons with dementia, the “good” and the “bad”. As caregivers, our role is to support all behavior for as long as possible, because one day all will be lost to the disease. Even though so-called “problem” behavior is disruptive, it might very well be the only “voice” the individual has left. This “voice” allows us to know whether a person is in pain or otherwise suffering. Therefore, instead of blocking problem behavior, we should try to figure out when and why it occurs so that we can make more dangerous forms of communication (e.g., aggression) unnecessary.</p>
 
 
+									</span>
+									<hr>
 									<ul class="actions fit">
 										<li><a href="Module7.html" class="button fit">< 7: Need to Communicate</a></li>
-										<li><a href="Module9.html" class="button primary fit">9: title ></a></li>
+										<li><a href="Module9.html" class="button primary fit">9: Reducing Behavioral Excesses ></a></li>
 									</ul>
+									
+									<p style="text-align: center;" class="copyright">Copyright &copy; 2020 Kyle Ferguson, Ph.D.</p>
 
 								</section>
 
@@ -74,7 +117,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html">Home</a></li>	
 										<li><a href="intro.html">Introduction</a></li>
 										<li><a href="Module1.html">1: Describing Behaviors</a></li>
 										<li><a href="Module2.html">2: R/O Medical Causes</a></li>
@@ -84,16 +127,16 @@
 										<li><a href="Module6.html">6: Appropriateness</a></li>
 										<li><a href="Module7.html">7: Need to Communicate</a></li>
 										<li><a href="Module8.html">8: Excess Disability</a></li>
-										<li><a href="Module9.html">9: title</a></li>
-										<li><a href="Module10.html">10: title</a></li>
-										<li><a href="Module11.html">11: title</a></li>									
+										<li><a href="Module9.html">9: Reducing Behavioral Excesses</a></li>
+										<li><a href="Module10.html">10: Reducing Behavioral Deficits</a></li>
+										<li><a href="Module11.html">11: Everything Else You Need to Know</a></li>						
 									</ul>
 								</nav>
 
-							<!-- Footer -->
+							<!-- Footer 
 								<footer id="footer">
 									<p class="copyright">&copy; WPRN 2020.</p>
-								</footer>
+								</footer>-->
 
 						</div>
 					</div>

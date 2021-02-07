@@ -2,10 +2,27 @@
 
 <html>
 	<head>
-		<title>Module 10 - MCB</title>
+		<title>Module 10 - GIFT Care for Elderly</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+				
+		</script>
+		<style>
+			.answer { 
+				color: #f56a6a;
+				display: none;
+			} 
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -18,23 +35,62 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Managing Challanging Behaviors</strong> Washington Primary Care Research Network</a>
+									<a href="index.html" class="logo"><strong>GIFT Care for Elderly</strong> Washington Primary Care Research Network</a>
 								</header>
-
+							
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>10: title</h1>
+										<h1>10: Reducing Behavioral Deficits</h1>
 									</header>
 
 									<div class="box">
-										<ul>
-											<li>highlighted takeaway 1</li>
-											<li>highlighted takeaway 2</li>
-											<li>highlighted takeaway 3</li>
+										<ul class="alt">
+											<li>The best care for patients with progressive dementia (memory problems that worsen over time) focuses on the remaining abilities rather than on the ever-increasing disabilities.</li>
+											<li>Learn a few strategies for how to do this</li>
 										</ul>
 									</div>
 
+									<h2>Verbal Prompts</h2>
+									<p>Verbal prompts are things we say or write that help patients perform a given task.</p>
+									<p>Please think of verbal prompts for using microwave.</p>
+									<a onclick="toggle_visibility('verb');" class="button small">Click here to show an example of verbal prompts for using a microwave.</a> 
+									<div class="box answer" id="verb">
+										<ol>
+											<li>open door</li>
+											<li>place coffee cup inside</li>
+											<li>press 1</li>
+											<li>press 2</li>
+											<li>press 3</li>
+											<li>press “start”</li>
+											<li>open door after bell rings</li>
+										</ol>
+									</div>
+									<h2><br>Picture Prompts</h2>
+									<p>Picture prompts are photographs or illustrations that increase the chances that the behavior will be carried out effectively.</p>
+									<p>Please think about how you would do picture prompts for a sock drawer</p>
+									<a onclick="toggle_visibility('pic');" class="button small">Please click here to show an example for “sock drawer.”</a> 
+									<div class="box answer" id="pic">
+										<span class="image fit"><img src="images/sock drawer.png" alt="" /></span>
+									</div>
+									
+									<h2><br>Modeling</h2>
+									<p>Modeling involves:</p>
+									<ol>
+										<li>Demonstrating the correct behavior to the patient. </li>
+										<li>The patient then imitates the behavior.</li>
+										<li>A reinforcer or reward immediately follows correct performance.</li>
+									</ol>
+									<p>The number of trials or opportunities to imitate the correct behavior depends on the patient.</p>
+									<p>Modeling works best with higher functioning patients who are in the early-to-middle stages of dementia.</p>
+									
+									<h2>Physical Guidance</h2>
+									<p>Physical guidance involves physically assisting the person with the task.</p>
+									<p>Example: If the patient becomes upset, attend to their feelings and provide reassurance (e.g., “I’m here to help you”). Offer to take the patient where their favorite activity is.</p>
+
+									
+									<a onclick="toggle_visibility('full');" class="button fit">Show Full Module Text</a>
+									<span id="full" style="display: none;">
 									<p>The following are basic principles in recommending nonpharmacological interventions to staff. The suggestions below are mainly for reducing behavioral deficits (i.e., increasing the behavior you want, like activities of daily living).</p>
 
 									<p>The best care for patients with progressive dementia (memory problems that worsen over time) focuses on the <i>remaining</i> abilities rather than on the ever-increasing disabilities. We preserve freedom and dignity for as long as possible by concentrating our caregiving efforts on maximizing patients’ strengths.</p>
@@ -62,7 +118,7 @@
 
 									<p><i>Picture prompts</i>. Picture prompts are photographs or illustrations that increase the chances that the behavior will be carried out effectively. Picture prompts are widely used with persons with dementia. Here are several examples. Family photographs displayed at the door help patients find their way to and from their rooms. Some phones are highly simplified using an automatic dialing system, where pictures replace numbers. Pictures placed on buttons correspond to phone numbers. For example, pressing the photo of “Cousin William” would dial that number. Picture prompts are also attached to enclosed spaces like cupboards and drawers. The figure below illustrates how a picture prompt can be used to locate “sock drawer.”</p>
 
-									<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
+									<span class="image fit"><img src="images/sock drawer.png" alt="" /></span>
 
 									<p><i>Modeling</i>. Modeling involves 1) demonstrating the correct behavior to the patient. 2) The patient then imitates the behavior. 3) A reinforcer or reward immediately follows correct performance. For example, staff first demonstrates how to use a hairbrush. The person modeling the behavior then hands over the brush and the patient imitates the action. Should the patient imitate the task correctly, a reinforcer (e.g., praise) immediately follows. Should the patient imitate the behavior incorrectly, the model then repeats the action and the patient is provided with another opportunity to imitate the behavior. Should this trial also result in failure, the model might try repeating the action or using a more hands-on approach like physical guidance. Physical guidance will be described below.</p>
 
@@ -74,10 +130,14 @@
 
 									<p>Physical guidance should only be used with the <i>cooperation</i> of the patient, using <i>as little force as possible</i>. If the patient becomes upset, attend to their feelings and provide reassurance (e.g., “I’m here to help you”). If reassuring them doesn’t help, abandon your agenda for the moment and return when the patient has calmed down. Here, you might use distraction. You might also want to consider caregiving alternatives if toileting becomes a major issue (e.g., adult absorbent briefs). </p>
 
+									</span>
+									<hr>
 									<ul class="actions fit">
-										<li><a href="Module9.html" class="button fit">< 9: title </a></li>
-										<li><a href="Module11.html" class="button primary fit">11: title ></a></li>
+										<li><a href="Module9.html" class="button fit">< 9: Reducing Behavioral Excesses </a></li>
+										<li><a href="Module11.html" class="button primary fit">11: Everything Else You Need to Know ></a></li>
 									</ul>
+									
+									<p style="text-align: center;" class="copyright">Copyright &copy; 2020 Kyle Ferguson, Ph.D.</p>
 
 								</section>
 
@@ -94,7 +154,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html">Home</a></li>	
 										<li><a href="intro.html">Introduction</a></li>
 										<li><a href="Module1.html">1: Describing Behaviors</a></li>
 										<li><a href="Module2.html">2: R/O Medical Causes</a></li>
@@ -104,16 +164,16 @@
 										<li><a href="Module6.html">6: Appropriateness</a></li>
 										<li><a href="Module7.html">7: Need to Communicate</a></li>
 										<li><a href="Module8.html">8: Excess Disability</a></li>
-										<li><a href="Module9.html">9: title</a></li>
-										<li><a href="Module10.html">10: title</a></li>
-										<li><a href="Module11.html">11: title</a></li>										
+										<li><a href="Module9.html">9: Reducing Behavioral Excesses</a></li>
+										<li><a href="Module10.html">10: Reducing Behavioral Deficits</a></li>
+										<li><a href="Module11.html">11: Everything Else You Need to Know</a></li>										
 									</ul>
 								</nav>
 
-							<!-- Footer -->
+							<!-- Footer
 								<footer id="footer">
 									<p class="copyright">&copy; WPRN 2020.</p>
-								</footer>
+								</footer> -->
 
 						</div>
 					</div>

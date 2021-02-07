@@ -2,10 +2,27 @@
 
 <html>
 	<head>
-		<title>Module 4 - MCB</title>
+		<title>Module 4 - GIFT Care for Elderly</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+				
+		</script>
+		<style>
+			.answer { 
+				color: #f56a6a;
+				display: none;
+			} 
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -18,7 +35,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Managing Challanging Behaviors</strong> Washington Primary Care Research Network</a>
+									<a href="index.html" class="logo"><strong>GIFT Care for Elderly</strong> Washington Primary Care Research Network</a>
 								</header>
 
 							<!-- Content -->
@@ -28,63 +45,180 @@
 									</header>
 
 									<div class="box">
-										<ul>
-											<li>highlighted takeaway 1</li>
-											<li>highlighted takeaway 2</li>
-											<li>highlighted takeaway 3</li>
+										<ul class="alt">
+											<li>Goal: learn how to figure out the consequences or purposes of problem behavior in persons with dementia</li>
+											<li>Understand the common purposes of problem behavior</li>
+											<li>Practice determining the purpose of behaviors via scenarios</li>
 										</ul>
 									</div>
+									
+									<h2>Common Purposes of Problem Behavior in Demented Elderly</h2>
+									<!--<ul>
+										<li>Reduce stimulation</li>
 
-									<p>While the consequences or purposes of problem behavior in persons with dementia might seem endless, behavior scientists have narrowed these to just four: (1) Reduce stimulation; (2) increase stimulation; (3) escape from unpleasant situations; and (4) attention from others. Bear in mind that a specific behavior might serve more than one purpose; this is especially the case with persons in the later stages of dementia, as their repertoires become extremely limited and they try to make the best with what abilities they have left.</p>
+										<li>Increase stimulation</li>
 
-									<p>When determining whether the purpose of behavior is to reduce stimulation; increase stimulation; escape from an unpleasant situation; or get attention from others; the following questions will serve as a guide.</p>
+										<li>Escape from unpleasant situations</li>
 
-									<ol>
-										<li>Reducing stimulation </li>
-										
-										<p style="margin-left: 2.5%">(A) Does the behavior occur when there is lots of activity in the person’s environment (e.g, loud TV or music, people talking)?
-										<br>
-										(B) Does the behavior stop when the patient is moved to a quiet environment?
-										<br><br>
-										<i>*If you answer “yes” to both of these questions, chances are the purpose of the behavioral challenge is to reduce stimulation.</i></p>
-											
-										<li>Increasing stimulation</li>
+										<li>Attention from others</li>
+									</ul>-->
+									
+									<h3>Reducing stimulation</h3>
+									<ul>
+										<li>Does the behavior occur when there is lots of activity in the person’s environment (e.g., loud TV or music, people talking)?</li>
 
-										<p style="margin-left: 2.5%">
-										(A) Does the behavior occur when there is little going on in the person’s environment?
-										<br>
-										(B) Would the behavior continue if no one was around?
-										<br><br>
-										<i>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to increase stimulation.</i>
-										</p>
+										<li>Does the behavior stop when the patient is moved to a quiet environment?</li>
+									</ul>
+									<p>*If you answer “yes” to both of these questions, chances are the purpose of the behavioral challenge is to reduce stimulation.</p>
+									
+									<h3>Increasing stimulation</h3>
+									<ul>
+										<li>Does the behavior occur when there is little going on in the person’s environment?</li>
+										<li>Would the behavior continue if no one was around?</li>
+									</ul>
+									<p>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to increase stimulation.</p>
+									
+									<h3>Escaping from an unpleasant situation</h3>
+									<ul>
+										<li>Does the behavior occur when you make a request (e.g., asking the patient to move to another location)?</li>
+										<li>Does the person look upset right before or during the behavior?</li>
+									</ul>
+									<p>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to escape an unpleasant situation.</p>
+									
+									<h3>Getting attention from others</h3>
+									<ul>
+										<li>Does the behavior occur when you stop paying attention to the patient?</li>
+										<li>Do you or other staff end up spending more time with the person when and/or after the behavior occurs?</li>
+									</ul>
+									<p>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to get attention from others.</p>
+									
+									<h2>RIEG Record Form</h2>
+									<div class="table-wrapper">
+												<table class="alt">
+													<!--<thead>
+														<tr>
+															<th>Antecedent: What happened immediately before the behavior?</th>
+															<th>Behavior: Describe the behavior in observable terms (e.g. kicked a peer)</th>
+															<th>Consequence: What happened immediately after the behavior?</th>
+															<th>Possible Function: What is the "payoff"? Why is the behavior happening?</th>
+														</tr>
+													</thead>-->
+													<tbody>
+														<tr>
+															<td> <br> </td>
+															<td><b>Reducing stimulation</b></td>
+															<td><b>Increasing stimulation</b></td>
+															<td><b>Escaping from an unpleasant situation</b></td>
+															<td><b>	Getting attention from others</b></td>
+														</tr>
+														<tr>
+															<td>Behavior 1</td>
+															<td> <br> </td>
+															<td> <br>  </td>
+															<td> <br>  </td>
+															<td>  <br> </td>
+														</tr>
+														<tr>
+															<td> Behavior 2 </td>
+															<td> <br> </td>
+															<td> <br>  </td>
+															<td> <br>  </td>
+															<td>  <br> </td>
+														</tr>
+														<tr>
+															<td> Behavior 3 </td>
+															<td> <br> </td>
+															<td> <br>  </td>
+															<td> <br>  </td>
+															<td>  <br> </td>
+														</tr>
+														<tr>
+															<td> Behavior 4 </td>
+															<td> <br> </td>
+															<td> <br>  </td>
+															<td> <br>  </td>
+															<td>  <br> </td>
+														</tr>
+														<tr>
+															<td> Behavior 5 </td>
+															<td> <br> </td>
+															<td> <br>  </td>
+															<td> <br>  </td>
+															<td>  <br> </td>
+														</tr>
+														
+													</tbody>
+													
+												</table>
+											</div>
+									
+									<h2>Exercise</h2>
+									<p>Use the above form to record what is the purpose of each behavior
+									<br>Click = to compare your choices to answers.</p>
+									
+									<p>Yelling out loud “help, help” whenever the roommate plays music or turning TV on. <a onclick="toggle_visibility('e1');" class="button small">=</a> <span class="answer" id="e1">Increasing stimulation</span></p>
+									<p>Yelling out loud “help, help” after lunch when residents in a NF are back in their rooms for a nap/quiet time. <a onclick="toggle_visibility('e2');" class="button small">=</a> <span class="answer" id="e2">Reducing stimulation.</span></p>
+									<p>Running between room and nurse station multiples time during the day and knock things off the desk at nurse station each time. <a onclick="toggle_visibility('e3');" class="button small">=</a> <span class="answer" id="e3">Getting attention from others.</span></p>
+									<p>Hiding under the bed, every other day before shower time. <a onclick="toggle_visibility('e4');" class="button small">=</a> <span class="answer" id="e4">Escaping from an unpleasant situation.</span></p>
+									<p>Touching every staff when they walk by in a hall. <a onclick="toggle_visibility('e5');" class="button small">=</a> <span class="answer" id="e5">Getting attention from others.</span></p>									
 
-										<li>Escaping from an unpleasant situation</li>
+									<a onclick="toggle_visibility('full');" class="button fit">Show Full Module Text</a>
 
-										<p style="margin-left: 2.5%">(A) Does the behavior occur when you make a request (e.g., asking the patient to move to another location)?
-										<br>
-										(B) Does the person look upset right before or during the behavior?
-										<br><br>
-										<i>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to escape an unpleasant situation.</i>
-										</p>
+									<span id="full" style="display: none;">
+										<p>While the consequences or purposes of problem behavior in persons with dementia might seem endless, behavior scientists have narrowed these to just four: (1) Reduce stimulation; (2) increase stimulation; (3) escape from unpleasant situations; and (4) attention from others. Bear in mind that a specific behavior might serve more than one purpose; this is especially the case with persons in the later stages of dementia, as their repertoires become extremely limited and they try to make the best with what abilities they have left.</p>
 
-										<li>Getting attention from others</li>
+										<p>When determining whether the purpose of behavior is to reduce stimulation; increase stimulation; escape from an unpleasant situation; or get attention from others; the following questions will serve as a guide.</p>
 
-										<p style="margin-left: 2.5%">(A) Does the behavior occur when you stop paying attention to the patient?
-										<br>
-										(B) Do you or other staff end up spending more time with the person when and/or after the behavior occurs?
-										<br><br>
-										<i>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to get attention from others.</i>
-										</p>
-										
-									</ol>
+										<ol>
+											<li>Reducing stimulation </li>
+
+											<p style="margin-left: 2.5%">(A) Does the behavior occur when there is lots of activity in the person’s environment (e.g, loud TV or music, people talking)?
+											<br>
+											(B) Does the behavior stop when the patient is moved to a quiet environment?
+											<br><br>
+											<i>*If you answer “yes” to both of these questions, chances are the purpose of the behavioral challenge is to reduce stimulation.</i></p>
+
+											<li>Increasing stimulation</li>
+
+											<p style="margin-left: 2.5%">
+											(A) Does the behavior occur when there is little going on in the person’s environment?
+											<br>
+											(B) Would the behavior continue if no one was around?
+											<br><br>
+											<i>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to increase stimulation.</i>
+											</p>
+
+											<li>Escaping from an unpleasant situation</li>
+
+											<p style="margin-left: 2.5%">(A) Does the behavior occur when you make a request (e.g., asking the patient to move to another location)?
+											<br>
+											(B) Does the person look upset right before or during the behavior?
+											<br><br>
+											<i>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to escape an unpleasant situation.</i>
+											</p>
+
+											<li>Getting attention from others</li>
+
+											<p style="margin-left: 2.5%">(A) Does the behavior occur when you stop paying attention to the patient?
+											<br>
+											(B) Do you or other staff end up spending more time with the person when and/or after the behavior occurs?
+											<br><br>
+											<i>*If you answer “yes” to both of these questions, chances are that the purpose of the behavior is to get attention from others.</i>
+											</p>
+
+										</ol>
 
 
-									<p>Of course the behavior can serve multiple functions in different situations. Yelling, for example, might attract the attention from others in one setting while getting people to back off with their requests in another. Technically speaking, although the topography of the behavior looks identical, it can serve different functions in different settings.</p>
+										<p>Of course the behavior can serve multiple functions in different situations. Yelling, for example, might attract the attention from others in one setting while getting people to back off with their requests in another. Technically speaking, although the topography of the behavior looks identical, it can serve different functions in different settings.</p>
 
+									</span>
+									<hr>
 									<ul class="actions fit">
 										<li><a href="Module3.html" class="button fit">< 3: Look at Context</a></li>
 										<li><a href="Module5.html" class="button primary fit">5: Extinction ></a></li>
 									</ul>
+									
+									<p style="text-align: center;" class="copyright">Copyright &copy; 2020 Kyle Ferguson, Ph.D.</p>
 
 								</section>
 
@@ -101,7 +235,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html">Home</a></li>	
 										<li><a href="intro.html">Introduction</a></li>
 										<li><a href="Module1.html">1: Describing Behaviors</a></li>
 										<li><a href="Module2.html">2: R/O Medical Causes</a></li>
@@ -111,16 +245,16 @@
 										<li><a href="Module6.html">6: Appropriateness</a></li>
 										<li><a href="Module7.html">7: Need to Communicate</a></li>
 										<li><a href="Module8.html">8: Excess Disability</a></li>
-										<li><a href="Module9.html">9: title</a></li>
-										<li><a href="Module10.html">10: title</a></li>
-										<li><a href="Module11.html">11: title</a></li>									
+										<li><a href="Module9.html">9: Reducing Behavioral Excesses</a></li>
+										<li><a href="Module10.html">10: Reducing Behavioral Deficits</a></li>
+										<li><a href="Module11.html">11: Everything Else You Need to Know</a></li>									
 									</ul>
 								</nav>
 
-							<!-- Footer -->
+							<!-- Footer 
 								<footer id="footer">
 									<p class="copyright">&copy; WPRN 2020.</p>
-								</footer>
+								</footer>-->
 
 						</div>
 					</div>
