@@ -15,16 +15,7 @@
 				else
 					e.style.display = 'block';
 				}
-			function toggle() {
-				var x = document.getElementsByClassName("answer");
-				for (var i =0; i < x.length; i++) {	
-					if (x[i].style.display === "none") {
-						x[i].style.display = "block";
-					} else {
-						x[i].style.display = "none";
-					}
-				}
-			}
+			
 				
 		</script>
 		<style>
@@ -95,20 +86,20 @@
 									<div>
 										<textarea name="message-2" id="message-2" placeholder="write what work-up you might consider (this form does not save any responses)" rows="1"></textarea>
 									</div>
-									<div class="box answer" style="display: none;">
+									<div class="box answer" style="display: none;" id="a3">
 										<p>These vitals show fever, tachycardia and lower blood pressure. Severe sepsis should be considered. Think about ordering blood cultures, CBC, CMP, chest xray, UA.</p>
 									</div>
+									<a onclick="toggle_visibility('a1');" class="button small"> Show Answer </a>
 									
 									
 									<p><br><br><b>Temp 98.5, HR 95, BP 138/90, RR 50, O2 94%</b></p>
 									<div>
 										<textarea name="message-3" id="message-3" placeholder="write what work-up you might consider (this form does not save any responses)" rows="1"></textarea>
 									</div>
-									<div class="box answer" style="display: none;">
+									<div class="box answer" style="display: none;" id="a3">
 										<p>This patient is tachypneic without hypoxia but otherwise has normal vitals. Knowing whether there is an acid-base disturbance and whether there is hypercarbia is important. Consider blood gases, chest xray.</p>
 									</div>
-									
-									<button onclick="toggle();" style="margin-top: 1em;"><p>Show Answers</p></button>
+									<a onclick="toggle_visibility('a3');" class="button small"> Show Answer </a>
 									
 									
 									
